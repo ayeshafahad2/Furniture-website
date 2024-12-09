@@ -58,7 +58,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <div className="flex md:hidden items-center">
-          <Button
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-black focus:outline-none"
           >
@@ -66,7 +66,7 @@ export default function Navbar() {
               icon={isMobileMenuOpen ? "heroicons-outline:x" : "heroicons-outline:menu-alt-3"}
               className="w-8 h-8"
             />
-          </Button>
+          </button>
         </div>
       </header>
 
