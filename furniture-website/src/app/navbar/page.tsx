@@ -19,12 +19,12 @@ export default function Navbar() {
             width={50}
             height={50}
           />
-          <h1 className="text-[24px] sm:text-[34px] font-bold">Furniro</h1>
+          <h1 className="text-[24px] sm:text-[34px] font-bold text-black">Furniro</h1>
         </div>
 
         {/* Navigation Menu (Desktop) */}
         <nav className="hidden md:flex items-center">
-          <ul className="flex gap-8 lg:gap-12 text-[14px] sm:text-[16px] font-medium">
+          <ul className="flex gap-8 lg:gap-12 text-[14px] sm:text-[16px] font-medium text-selfcolors-darkBrown">
             <li className="hover:text-blue-500 transition-colors">
               <Link href="/">Home</Link>
             </li>
@@ -32,7 +32,7 @@ export default function Navbar() {
               <Link href="/shop">Shop</Link>
             </li>
             <li className="hover:text-blue-500 transition-colors">
-              <Link href="/about">About</Link>
+              <Link href="/blog">Blog</Link>
             </li>
             <li className="hover:text-blue-500 transition-colors">
               <Link href="/contact">Contact</Link>
@@ -41,8 +41,8 @@ export default function Navbar() {
         </nav>
 
         {/* Icons Section */}
-        <div className="hidden md:flex items-center gap-4 sm:gap-6">
-          <Link href="/profile" className="hover:text-blue-500 transition-colors">
+        <div className="hidden md:flex items-center gap-4 sm:gap-6 text-selfcolors-darkBrown">
+          <Link href="/signup" className="hover:text-blue-500 transition-colors">
             <Icon icon="mdi:account-alert-outline" className="w-6 h-6 sm:w-7 sm:h-7" />
           </Link>
           <Link href="/search" className="hover:text-blue-500 transition-colors">
@@ -92,7 +92,7 @@ export default function Navbar() {
 
           {/* Icons Section (Mobile) */}
           <div className="mt-6 flex justify-evenly border-t pt-4">
-            <Link href="/profile" className="hover:text-blue-500 transition-colors">
+            <Link href="/signup" className="hover:text-blue-500 transition-colors">
               <Icon icon="mdi:account-alert-outline" className="w-7 h-7" />
             </Link>
             <Link href="/search" className="hover:text-blue-500 transition-colors">
