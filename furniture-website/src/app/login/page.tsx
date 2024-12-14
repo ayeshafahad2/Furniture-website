@@ -78,7 +78,7 @@ export default function Login() {
 
             {/* Account Signup Link */}
             <div className="text-sm text-center">
-              Dont have an account?{' '}
+              {`Don't have an account?`}{' '}
               <Link href="/signup" className="bg-selfcolors-darkBrown text-selfcolors-lightCream hover:text-black hover:bg-selfcolors-lightCream">
                 Sign up here
               </Link>
