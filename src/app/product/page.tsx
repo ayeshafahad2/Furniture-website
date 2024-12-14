@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'; // Importing star icons
-import Feature from '../features/page';
+
 
 const ProductPage = () => {
   return (
@@ -278,7 +278,6 @@ const ProductPage = () => {
           </span>
           <span>3 Months</span>
         </div>
-        <Feature/>
       </div>
     </>
   );

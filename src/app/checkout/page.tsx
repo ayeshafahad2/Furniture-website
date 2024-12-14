@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Feature from '../features/page';
+
 
 const CheckOut = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
@@ -241,7 +241,6 @@ const CheckOut = () => {
             </div>
           </div>
         </div>
-        <Feature/>
       </div>
     </>
   );
