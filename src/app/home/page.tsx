@@ -208,7 +208,7 @@ export default function Home() {
 
       <div className="w-full">
   <Image
-    src="/share.png"
+    src="/Share.png"
     alt="share"
     width={1400}
     height={800}
