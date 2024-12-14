@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
+
 const images = [
   "/Image.png", // Larger height image
   "/study.png", // Smaller height image
@@ -22,12 +23,17 @@ export default function InspirationPage() {
     <div className="flex flex-col items-center py-12 px-4 bg-selfcolors-lightCream text-center">
       {/* Heading and description */}
       <div className="mb-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">50+ Beautiful Rooms</h1>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-selfcolors-darkBrown">Inspiration</h2>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mx-auto w-full max-w-[600px]">
+        <div className="text-4xl sm:text-5xl md:text-6xl font-bold">50+ Beautiful Rooms</div>
+        <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-selfcolors-darkBrown">Inspiration</div>
+        <div className="text-lg sm:text-xl md:text-2xl text-gray-700 mx-auto w-full max-w-[600px]">
           <span>Our designer already made a lot of beautiful</span>
           <span> prototypes of rooms that inspire you.</span>
-        </p>
+    <button className="bg-selfcolors-darkBrown text-black py-2 px-4 rounded-lg text-lg font-bold">
+      EXPLORE MORE 
+    </button>
+  
+
+        </div>
       </div>
 
       {/* Image and Button Section */}

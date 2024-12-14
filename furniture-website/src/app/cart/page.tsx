@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaTrash } from "react-icons/fa";
 import { useRouter } from "next/navigation"; // Import useRouter
+import Feature from "../features/page";
 
 function Cart() {
   const router = useRouter(); // Initialize useRouter
@@ -146,6 +147,7 @@ function Cart() {
           </div>
         </div>
       </div>
+      <Feature/>
     </div>
   );
 }

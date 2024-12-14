@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaSearch, FaUser, FaCalendarAlt, FaTag } from "react-icons/fa";
+import Feature from "../features/page";
 
 const AdminTag = () => {
   return (
@@ -196,6 +197,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
+      <Feature/>
     </div>
   );
 };

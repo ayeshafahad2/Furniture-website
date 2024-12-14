@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'; // Importing star icons
+import Feature from '../features/page';
 
 const ProductPage = () => {
   return (
@@ -22,12 +23,12 @@ const ProductPage = () => {
             height={80}
             className="object-contain cursor-pointer sm:w-[100px] sm:h-[100px]"
           />
-          <h1 className="mt-4 text-2xl sm:text-4xl font-bold text-gray-800">
+          <div className="mt-4 text-2xl sm:text-4xl font-bold text-gray-800">
             Product Comparison
-          </h1>
-          <p className="mt-2 text-sm sm:text-lg text-gray-600">
+          </div>
+          <div className="mt-2 text-sm sm:text-lg text-gray-600">
             Home &gt; Comparison
-          </p>
+          </div>
         </div>
       </div>
 
@@ -50,7 +51,7 @@ const ProductPage = () => {
    
     {/* Card 1 */}
     <div className="flex flex-col items-center text-center max-w-xs">
-      <h2 className="text-lg sm:text-xl font-semibold">Asgaard Sofa</h2>
+      <div className="text-lg sm:text-xl font-semibold">Asgaard Sofa</div>
       <Image
         src="/Asgaard.png"
         alt="Asgaard Sofa"
@@ -108,17 +109,18 @@ const ProductPage = () => {
 
     {/* Dropdown Section */}
     <div className="flex flex-col items-center">
-      <h2 className="text-lg sm:text-xl font-semibold mb-2">Add a Product</h2>
-      <select
-  className="bg-selfcolors-darkBrown text-white py-2 px-4 rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
->
-        <option value="" disabled selected>
-          Choose a product
-        </option>
-        <option value="asgaard">Asgaard Sofa</option>
-        <option value="outdoor">Outdoor Sofa</option>
-      </select>
-    </div>
+  <button className="text-lg sm:text-xl font-semibold mb-2">Add a Product</button>
+  <select
+    className="bg-selfcolors-darkBrown text-white py-2 px-4 rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+    defaultValue="" // Set the default value here
+  >
+    <option value="" disabled>
+      Choose a product
+    </option>
+    <option value="asgaard">Asgaard Sofa</option>
+    <option value="outdoor">Outdoor Sofa</option>
+  </select>
+</div>
   </div>
 </div>
 
@@ -135,33 +137,33 @@ const ProductPage = () => {
         <div className="flex flex-col gap-6   text-[18px] sm:text-[20px] w-full sm:w-1/3 mb-6 sm:mb-0">
           <h1 className="text-[24px] pt-3 sm:text-[28px] font-semibold">General</h1>
 
-          <h4>Sales Package</h4>
-          <h4>Model Number</h4>
-          <h4>Secondary Material</h4>
-          <h4>Configuration</h4>
-          <h4>Upholstery Material</h4>
-          <h4>Upholstery Color</h4>
+          <span>Sales Package</span>
+          <span>Model Number</span>
+          <span>Secondary Material</span>
+          <span>Configuration</span>
+          <span>Upholstery Material</span>
+          <span>Upholstery Color</span>
         </div>
         
 
         {/* Product Info */}
         <div className="flex flex-col pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
 
-          <h4>1 sectional sofa</h4>
-          <h4>TFCBLIGRBL6SRHS</h4>
-          <h4>Solid Wood</h4>
-          <h4>L-shaped</h4>
-          <h4>Fabric + Cotton</h4>
-          <h4>Bright Grey & Lion</h4>
+          <span>1 sectional sofa</span>
+          <span>TFCBLIGRBL6SRHS</span>
+          <span>Solid Wood</span>
+          <span>L-shaped</span>
+          <span>Fabric + Cotton</span>
+          <span>Bright Grey & Lion</span>
         </div>
         {/* Product Info for Second Item */}
         <div className="flex flex-col  pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
-          <h4>1 Three Seater, 2 Single Seater</h4>
-          <h4>DTUBLIGRBL568</h4>
-          <h4>Solid Wood</h4>
-          <h4>L-shaped</h4>
-          <h4>Fabric + Cotton</h4>
-          <h4>Bright Grey & Lion</h4>
+          <span>1 Three Seater, 2 Single Seater</span>
+          <span>DTUBLIGRBL568</span>
+          <span>Solid Wood</span>
+          <span>L-shaped</span>
+          <span>Fabric + Cotton</span>
+          <span>Bright Grey & Lion</span>
         </div>
       </div>
 
@@ -170,32 +172,32 @@ const ProductPage = () => {
         {/* Labels */}
         <div className="flex flex-col gap-6 text-[18px] sm:text-[20px] w-full sm:w-1/3 mb-6 sm:mb-0">
       
-          <h1 className="text-[24px] pt-4 sm:text-[28px] font-semibold">Product</h1>
-          <h4>Filling Material</h4>
-          <h4>Finish Type</h4>
-          <h4>Adjustable Headrest</h4>
-          <h4>Maximum Load Capacity</h4>
-          <h4>Origin of Manufacture</h4>
+          <span className="text-[24px] pt-4 sm:text-[28px] font-semibold">Product</span>
+          <span>Filling Material</span>
+          <span>Finish Type</span>
+          <span>Adjustable Headrest</span>
+          <span>Maximum Load Capacity</span>
+          <span>Origin of Manufacture</span>
         </div>
 
         
 
         {/* Product Info Column 1 */}
         <div className="flex flex-col pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
-          <h4>Foam</h4>
-          <h4>Bright Grey & Lion</h4>
-          <h4>No</h4>
-          <h4>280 KG</h4>
-          <h4>India</h4>
+          <span>Foam</span>
+          <span>Bright Grey & Lion</span>
+          <span>No</span>
+          <span>280 KG</span>
+          <span>India</span>
         </div>
 
         {/* Product Info Column 2 */}
         <div className="flex flex-col pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
-          <h4>Matte</h4>
-          <h4>Bright Grey & Lion</h4>
-          <h4>Yes</h4>
-          <h4>300 KG</h4>
-          <h4>India</h4>
+          <span>Matte</span>
+          <span>Bright Grey & Lion</span>
+          <span>Yes</span>
+          <span>300 KG</span>
+          <span>India</span>
         </div>
       </div>
 
@@ -204,34 +206,34 @@ const ProductPage = () => {
         {/* Labels */}
         <div className="flex flex-col gap-6 text-[18px] sm:text-[20px] w-full sm:w-1/3 mb-6 sm:mb-0">
           <h1 className="text-[24px] pt-4 sm:text-[28px] font-semibold">Dimensions</h1>
-          <h4>Width</h4>
-          <h4>Height</h4>
-          <h4>Depth</h4>
-          <h4>Weight</h4>
-          <h4>Seat Height</h4>
-          <h4>Leg Height</h4>
+          <span>Width</span>
+          <span>Height</span>
+          <span>Depth</span>
+          <span>Weight</span>
+          <span>Seat Height</span>
+          <span>Leg Height</span>
         </div>
 
         
 
         {/* Product Info Column 1 */}
         <div className="flex flex-col pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
-          <h4>265.32 cm</h4>
-          <h4>76 cm</h4>
-          <h4>167.76 cm</h4>
-          <h4>45 KG</h4>
-          <h4>41.52 cm</h4>
-          <h4>5.46 cm</h4>
+          <span>265.32 cm</span>
+          <span>76 cm</span>
+          <span>167.76 cm</span>
+          <span>45 KG</span>
+          <span>41.52 cm</span>
+          <span>5.46 cm</span>
         </div>
 
         {/* Product Info Column 2 */}
         <div className="flex flex-col pt-20 gap-6 text-[18px] sm:text-[20px] mt-6 sm:mt-0 w-full sm:w-1/3">
-          <h4>265.32 cm</h4>
-          <h4>76 cm</h4>
-          <h4>167.76 cm</h4>
-          <h4>45 KG</h4>
-          <h4>41.52 cm</h4>
-          <h4>5.46 cm</h4>
+          <span>265.32 cm</span>
+          <span>76 cm</span>
+          <span>167.76 cm</span>
+          <span>45 KG</span>
+          <span>41.52 cm</span>
+          <span>5.46 cm</span>
         </div>
       </div>
 
@@ -239,43 +241,44 @@ const ProductPage = () => {
       <div className="flex flex-wrap items-start justify-between mt-14 sm:text-[20px] text-[18px] sm:px-6 px-4">
         {/* Column 1 - Warranty Labels */}
         <div className="flex flex-col gap-6 mb-6 sm:mb-0 sm:mx-auto w-full sm:w-1/3">
-          <h1 className="text-[24px] pt-4 sm:text-[28px] font-semibold">Warranty</h1>
-          <h4>Warranty Summary</h4>
+          <span className="text-[24px] pt-4 sm:text-[28px] font-semibold">Warranty</span>
+          <span>Warranty Summary</span>
           <br/>
-          <h4>Warranty Service Type</h4>
+          <span>Warranty Service Type</span>
           <br/>
-          <h4>Covered in Warranty</h4>
+          <span>Covered in Warranty</span>
           <br/>
-          <h4>Not Covered in Warranty</h4>
+          <span>Not Covered in Warranty</span>
           <br/>
-          <h4>Domestic Warranty</h4>
+          <span>Domestic Warranty</span>
         </div>
 
         {/* Column 2 - Warranty Details for Product 1 */}
         <div className="flex flex-col pt-20 gap-6 sm:mt-0 sm:mx-auto w-full sm:w-1/3">
-          <h4 className="w-full sm:w-[230px]">1 Year Manufacturing Warranty</h4>
-          <h4 className="w-full sm:w-[290px] ">
+          <span className="w-full sm:w-[230px]">1 Year Manufacturing Warranty</span>
+          <span className="w-full sm:w-[290px] ">
             For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com
-          </h4>
-          <h4 className="w-full sm:w-[260px] ">Warranty Against Manufacturing Defect</h4>
-          <h4 className="w-full sm:w-[260px] ">
+          </span>
+          <span className="w-full sm:w-[260px] ">Warranty Against Manufacturing Defect</span>
+          <span className="w-full sm:w-[260px] ">
             The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear.
-          </h4>
-          <h4>1 Year</h4>
+          </span>
+          <span>1 Year</span>
         </div>
 
         {/* Column 3 - Warranty Details for Product 2 */}
         <div className="flex flex-col pt-20 gap-6 sm:mt-0 sm:mx-auto w-full sm:w-1/3">
-          <h4 className="w-full sm:w-[230px]">1.2 Year Manufacturing Warranty</h4>
-          <h4 className="w-full sm:w-[260px] ">
+          <span className="w-full sm:w-[230px]">1.2 Year Manufacturing Warranty</span>
+          <span className="w-full sm:w-[260px] ">
             For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com
-          </h4>
-          <h4 className="w-full sm:w-[260px] ">Warranty of the product is limited to manufacturing defects only.</h4>
-          <h4 className="w-full sm:w-[245px] ">
+          </span>
+          <span className="w-full sm:w-[260px] ">Warranty of the product is limited to manufacturing defects only.</span>
+          <span className="w-full sm:w-[245px] ">
             The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use.
-          </h4>
-          <h4>3 Months</h4>
+          </span>
+          <span>3 Months</span>
         </div>
+        <Feature/>
       </div>
     </>
   );

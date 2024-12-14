@@ -124,15 +124,15 @@ function ProductPage() {
             <p><strong>Tags:</strong> Sofa, Chair, Home, Shop</p>
             <p className="flex items-center gap-4">
               <strong>Share:</strong>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
+              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
                 <FaFacebook size={16} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
+              </Link>
+              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
                 <FaInstagram size={16} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
+              </Link>
+              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
                 <FaTwitter size={16} />
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -230,13 +230,12 @@ function ProductPage() {
   ))}
 </div>
 <div className="flex justify-center mt-8">
-          <Link href="/shop">
-          <button className="mt-4 inline-block px-4 py-2 bg-selfcolors-lightCream text-black font-semibold rounded-lg hover:bg-selfcolors-darkBrown w-44 h-14">
+          <Link href="/product">
+          <button className="mt-4 px-4 py-2 bg-selfcolors-darkBrown text-black font-semibold rounded-lg w-44 h-14">
             See More
           </button>
         </Link>
         </div> 
-
   </div>
   );
 }

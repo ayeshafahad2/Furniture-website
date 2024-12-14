@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaHeart, FaShareAlt, FaExchangeAlt,FaSlidersH  , FaThLarge,} from 'react-icons/fa';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -162,10 +163,13 @@ const ShopPage = () => {
         <p className="text-gray-500 font-bold line-through">{product.price}</p>
         <p className="text-gray-800 font-bold">{product.discountPrice}</p>
 
-       {/* Hover effect and "Add to Cart" button */}
-       <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
   {/* Add to Cart Button */}
-  <button className="bg-white text-black py-2 px-4 rounded-lg text-lg font-semibold">Add to Cart</button>
+  <Link href="/singleproduct">
+    <button className="bg-white text-black py-2 px-4 rounded-lg text-lg font-semibold">
+      Add to Cart
+    </button>
+  </Link>
 
   {/* Icons below the Add to Cart button */}
   <div className="mt-4 flex gap-6 text-white">
@@ -183,6 +187,7 @@ const ShopPage = () => {
     </button>
   </div>
 </div>
+
 
       </div>
     ))

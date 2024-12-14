@@ -1,6 +1,7 @@
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
+import Feature from '../features/page';
 
 export default function Login() {
   return (
@@ -85,6 +86,7 @@ export default function Login() {
           </form>
         </div>
       </div>
+      <Feature/>
     </div>
   );
 }

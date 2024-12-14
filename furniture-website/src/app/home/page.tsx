@@ -196,7 +196,7 @@ export default function Home() {
           {/* Link to Product Page */}
           <div className="text-center mt-6">
             <Link
-              href="/single-product"
+              href="/product"
               className="bg-primary text-black py-2 px-6 rounded-lg text-lg font-semibold hover:bg-darkBrown transition-colors"
             >
               See More
