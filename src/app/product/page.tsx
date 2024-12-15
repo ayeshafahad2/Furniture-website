@@ -53,7 +53,7 @@ const ProductPage = () => {
     <div className="flex flex-col items-center text-center max-w-xs">
       <div className="text-lg sm:text-xl font-semibold">Asgaard Sofa</div>
       <Image
-        src="/Asgaard.png"
+        src="/Group 95.png"
         alt="Asgaard Sofa"
         width={200}
         height={200}
