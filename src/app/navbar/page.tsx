@@ -82,7 +82,7 @@ export default function Navbar() {
                 <Link href="/shop">Shop</Link>
               </li>
               <li className="hover:text-blue-500 transition-colors">
-                <Link href="/about">About</Link>
+                <Link href="/blog">blog</Link>
               </li>
               <li className="hover:text-blue-500 transition-colors">
                 <Link href="/contact">Contact</Link>

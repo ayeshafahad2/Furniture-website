@@ -28,7 +28,7 @@ function ProductPage() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
   {/* Side Images */}
   <div className="col-span-12 md:col-span-2 flex md:flex-col justify-center gap-4 md:gap-2 pt-4 md:pt-10 pl-4 md:pl-8">
-    {["cart-a", "Group94", "sofa3", "sofa"].map((pic, index) => (
+    {["Group 95", "Group94", "sofa3", "sofa"].map((pic, index) => (
       <Image
         key={index}
         src={`/${pic}.png`}
@@ -195,7 +195,7 @@ function ProductPage() {
       desc: "Luxury big sofa", 
       price: "Rp 7.000.00", 
       discountPrice: "Rp 14,000.00",
-      image: "/image3.png", 
+      image: "/Images (3).png",
       tag: "-50% OFF", // Tag text for this product
       tagColor: "bg-red-500" // Color for the tag
     },
@@ -205,7 +205,7 @@ function ProductPage() {
       desc: "Outdoor bar table and stool", 
       price: "Rp 500.000",  
       discountPercent: "New", // Custom text for "New"
-      image: "/image4.png", 
+      image: "/Images (4).png",  
       tag: "New", // Tag text for this product
       tagColor: "bg-green-500" // Color for the "New" tag
     }
