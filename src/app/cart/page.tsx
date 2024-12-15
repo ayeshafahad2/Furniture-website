@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation"; // Import useRouter
 function Cart() {
   const router = useRouter(); // Initialize useRouter
   const initialCart = [
-    { id: 1, name: "Breed Dry Dog Food", price: 100, image: "/cart-a.png" },
+    { id: 1, name: "Asgaard Sofa", price: 250.000, image: "/Group 95.png" },
   ];
 
   const [cartItems, setCartItems] = useState(initialCart);
@@ -111,7 +111,6 @@ function Cart() {
                           onClick={() => handleRemoveItem(item.id)}
                         >
                           <FaTrash className="text-lg" />
-                          <span className="ml-1 text-sm">Remove</span>
                         </button>
                       </td>
                     </tr>
@@ -140,7 +139,7 @@ function Cart() {
             </div>
             <button
               onClick={handleCheckout} // Call handleCheckout on click
-              className="w-full bg-selfcolors-lightCream text-selfcolors-darkBrown px-4 py-2 rounded-lg shadow-md border-black border hover:bg-yellow-400 transition"
+              className="w-full bg-selfcolors-lightCream text-black px-4 py-2 rounded-lg shadow-md border-black border hover:bg-selfcolors-darkBrown transition"
             >
               Checkout
             </button>
